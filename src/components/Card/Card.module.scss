@@ -1,0 +1,112 @@
+.card_component {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 8px;
+
+  .header {
+    border-bottom: 1px solid grey;
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .cross {
+    background-image: url(./../../assets/close-button.svg);
+    height: 15px;
+    width: 15px;
+    background-size: contain;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    right: 60px;
+    display: initial;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 60%;
+    bottom: 3px;
+  }
+
+  .cross:hover .tooltip {
+    visibility: visible;
+  }
+
+  .description {
+    padding: 8px;
+    text-align: left;
+  }
+}
+
+.addcard_component {
+  background-size: contain;
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 25px 0px;
+  cursor: pointer;
+
+  .icon {
+    background-image: url(./../../assets/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .title {
+    z-index: 2;
+    text-align: center;
+  }
+
+  .add_card_form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    z-index: 2;
+
+    .submit_button {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .form_title {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .close {
+      background-image: url(./../../assets//close-button.svg);
+      height: 15px;
+      width: 15px;
+      background-repeat: no-repeat;
+      z-index: 2;
+      background-size: contain;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.list_component {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 8px;
+  width: 100%;
+
+  .header {
+    border-bottom: 1px solid grey;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .cross {
+    background-image: url(./../../assets/close-button.svg);
+    height: 15px;
+    width: 15px;
+    background-size: contain;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    right: 60px;
+    display: initial;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 60%;
+    bottom: 3px;
+  }
+
+  .cross:hover .tooltip {
+    visibility: visible;
+  }
+
+  .cards {
+  }
+}
+
+.addlist_component {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 8px;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .icon {
+    background-image: url(./../../assets/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .title {
+    z-index: 2;
+    text-align: center;
+  }
+
+  .add_list_form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    z-index: 2;
+
+    .submit_button {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .form_title {
+      margin-bottom: 10px;
+    }
+  }
+}
