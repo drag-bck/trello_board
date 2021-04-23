@@ -3,6 +3,7 @@
   border-radius: 4px;
   margin: 8px;
   width: 100%;
+  min-width: 125px;
 
   .header {
     border-bottom: 1px solid grey;
@@ -52,6 +53,7 @@
   border-radius: 4px;
   margin: 8px;
   min-width: 80px;
+  min-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +82,7 @@
     padding: 16px;
     border: 1px solid black;
     border-radius: 4px;
-    z-index: 2;
+    z-index: 3;
 
     .submit_button {
       display: block;

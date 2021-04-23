@@ -8,6 +8,7 @@ import {
   getDataFromLocalStorage,
   saveDataToLocalStorage,
 } from "./utils/helper";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [listData, modifyListData] = useState<any>(getDataFromLocalStorage());
@@ -39,6 +40,7 @@ const App = () => {
       }
     });
     modifyListData(tempListData);
+    saveDataToLocalStorage(tempListData);
   };
 
   const deleteCard = (id: string) => {
@@ -55,6 +57,7 @@ const App = () => {
     });
     modifyListData(tempListData);
     triggerRender(!reRenderFlag);
+    saveDataToLocalStorage(tempListData);
   };
 
   const deleteList = (id: string) => {
@@ -68,6 +71,7 @@ const App = () => {
     });
     modifyListData(tempListData);
     triggerRender(!reRenderFlag);
+    saveDataToLocalStorage(tempListData);
   };
 
   const addNewCard = (data: ICardProps, id: string) => {
@@ -92,6 +96,7 @@ const App = () => {
 
   return (
     <div className={style.App}>
+      <Header title={"Trello Board"} />
       <DragDropContext onDragEnd={dragDropHandler}>
         {listData.data.map((item: IListProps) => {
           return (

@@ -17,6 +17,8 @@
     font-size: 18px;
     font-weight: 500;
     color: white;
+    max-width: 250px;
+    overflow-wrap: break-word;
   }
 
   .cross {
@@ -48,6 +50,9 @@
   .description {
     padding: 8px;
     text-align: left;
+    background-color: white;
+    max-width: 250px;
+    overflow-wrap: break-word;
   }
 }
 
@@ -85,7 +90,7 @@
     padding: 16px;
     border: 1px solid black;
     border-radius: 4px;
-    z-index: 2;
+    z-index: 3;
 
     .submit_button {
       display: block;
