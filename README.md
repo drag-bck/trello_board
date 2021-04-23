@@ -13,3 +13,5 @@
 github link: https://github.com/drag-bck/trello_board
 
 Deploy on: https://hopeful-elion-44fe36.netlify.app/
+
+![ScreenShot](src/assets/Screenshot 2021-04-24 at 5.22.20 AM.png?raw=true "ScreenShot")
